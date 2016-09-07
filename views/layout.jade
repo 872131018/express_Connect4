@@ -3,5 +3,10 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+  body(class='w3-content', style='max-width:1300px')
     block content
+
+    script(src='//cdn.socket.io/socket.io-1.4.5.js')
