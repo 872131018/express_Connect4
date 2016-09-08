@@ -1,10 +1,37 @@
 /*
+* Arrows for flipping through the layers
+*/
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid green;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid green;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*
 * Circle for setting the cells
 */
 .circle {
     border-radius: 50%;
-    width: 20px;
-	height: 20px;
+}
+/*
+* Style for the cells in the game
+*/
+.cell {
+    height: 60px;
+    width: 60px;
 }
 body {
   padding: 50px;

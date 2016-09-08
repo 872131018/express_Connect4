@@ -9,4 +9,13 @@ html
   body(class='w3-content', style='max-width:1300px')
     block content
 
+
+    //- Load external CDN scripts
+    script(
+      src='https://code.jquery.com/jquery-3.1.0.min.js'
+      integrity='sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s='
+      crossorigin='anonymous'
+    )
     script(src='//cdn.socket.io/socket.io-1.4.5.js')
+    //- Load local scripts
+    script(src='javascripts/change_layer.js')
