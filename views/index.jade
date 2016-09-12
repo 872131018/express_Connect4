@@ -15,11 +15,12 @@ block content
                         h3 GameBoard
                         h6(id='current_layer') 0
                     div(class='arrow-down', data-direction='down')
-                each layer, layer_index in cube
-                    div(id='layer'+layer_index, class='layer', style=(layer_index == 0) ? '' : 'display: none')
-                        each row, row_index in layer
-                            div(class='w3-row')
-                                span(class='w3-col s2 cell')
-                                each cell, cell_index in row
-                                    span(class='w3-col s1 w3-border w3-hover-border-yellow cell')
-                                span(class='w3-col s2 cell')
+                div(id="cube_container")
+                    each layer, layer_index in cube
+                        div(id='layer'+layer_index, class='layer', style=(layer_index == 0) ? '' : 'display: none')
+                            each row, row_index in layer
+                                div(class='w3-row')
+                                    span(class='w3-col s2 cell')
+                                    each cell, cell_index in row
+                                        span(class='w3-col s1 w3-border w3-hover-border-yellow cell', data-id=layer_index+','+row_index+','+cell_index)
+                                    span(class='w3-col s2 cell')
